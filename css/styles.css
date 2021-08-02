@@ -11473,12 +11473,12 @@ body {
 }
 #gall {
   position: relative;
-  padding-top: 50%;
+  padding-top: 70%;
   -moz-user-select: none; user-select: none;
 }
 #gall img {
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 12.5%;
   max-width: 24.5%;
   max-height: 49.5%;
@@ -11492,16 +11492,6 @@ body {
 #gall img:nth-child(4n) {left: 87.5%;}
 #gall img:nth-child(n+5) {top: 75%;}
 
-#gall img:focus {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  max-width: 1000%;
-  max-height: 1000%;
-  outline: none;
-  pointer-events: none;
-}
 #gall img:focus ~ div {
   position: absolute;
   top: 0;
@@ -11510,4 +11500,14 @@ body {
   bottom: 0;
   background: #fff;
   cursor: zoom-out;
+}
+#gall img:focus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  max-width: 250%;
+  max-height: 250%;
+  outline: none;
+  pointer-events: none;
 }
